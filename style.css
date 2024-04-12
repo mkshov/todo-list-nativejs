@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url(https://i.yapx.ru/GuYDB.gif);
+  /* background-size: cover; */
+
+  /* ! 2 primer */
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #030531;
+}
+
+.header {
+  background-color: #0000004d;
+  color: white;
+  max-width: 350px;
+  text-align: center;
+  padding: 30px 10px;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.header h1 {
+  margin-bottom: 20px;
+}
+
+.modal-btn {
+  padding: 15px 45px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px white;
+  transition: 0.3s;
+  background-color: #eff5ff;
+  font-weight: bold;
+}
+
+.modal-btn:hover {
+  background-color: #5674b9;
+  color: white;
+}
+
+.modal-btn:active {
+  box-shadow: none;
+  transition: 0s;
+}
+
+.parent {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.inner {
+  background-color: #0000004d;
+  color: white;
+  padding: 40px;
+  border-radius: 20px;
+}
+.inner h1 {
+  margin-bottom: 20px;
+}
+
+.inner ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inner ul li {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #5674b97d;
+  padding-bottom: 10px;
+}
+
+.inner span {
+  display: block;
+}
+
+/* ? modal */
+.close-modal {
+  display: none !important;
+}
+.modal-parent {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #030531c3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-modal {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 50px;
+  border-radius: 5px;
+}
+
+.add-modal input {
+  padding: 10px 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: 2px solid #5674b9;
+  font-size: 15px;
+}
+
+.add-modal h1 {
+  color: #5674b9;
+  margin-bottom: 20px;
+}
+
+.add-modal button {
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* ! delete */
+.delete-btn {
+  /* display: block; */
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #bb2124;
+  color: white;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px gray;
+  transition: 0.2s;
+}
+.delete-btn:active {
+  box-shadow: none;
+}
+
+.edit-btn {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #5674b9;
+  color: white;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px gray;
+  transition: 0.2s;
+}
+.edit-btn:active {
+  box-shadow: none;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+/* ! edit */
+.edit-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #030531c3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-modal__inner {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 50px;
+  border-radius: 5px;
+}
+
+.edit-modal__inner input {
+  padding: 10px 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: 2px solid #5674b9;
+  font-size: 15px;
+}
+
+.edit-modal__inner h1 {
+  color: #5674b9;
+  margin-bottom: 20px;
+}
+
+.edit-modal__inner button {
+  margin-top: 10px;
+  width: 250px;
+}
+
+/* ! details */
+#details-btn {
+  background-color: orange;
+}
+
+#details {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #030531c3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#details__inner {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 50px;
+  border-radius: 5px;
+  color: orange;
+  max-width: 500px;
+}
+
+#details__inner h2 {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #5674b9;
+}
+
+#details__inner p {
+  color: #5674b9;
+}
+
+.details-btn {
+  margin-top: 20px;
+}
+
+.details-btn:hover {
+  background-color: orange;
+}
+
+@media all and (max-width: 850px) {
+  .inner {
+    background-color: #0000004d;
+    color: white;
+    width: 350px;
+  }
+  .parent {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .inner h1 {
+    font-size: 25px;
+  }
+}

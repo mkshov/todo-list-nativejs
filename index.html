@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Задачи на неделю</h1>
+      <button id="modal-btn" class="modal-btn">Добавить задачу</button>
+    </div>
+    <div class="parent">
+      <div class="inner">
+        <h1>Не решенные задачи</h1>
+        <ul id="not-completed"></ul>
+      </div>
+      <div class="inner">
+        <h1>Решенные задачи</h1>
+        <ul id="completed"></ul>
+      </div>
+    </div>
+
+    <div class="modal-parent">
+      <form class="add-modal">
+        <h1>Добавить задачу</h1>
+        <input placeholder="Заголовок задачи" type="text" id="title" />
+        <input placeholder="Описание задачи" type="text" id="description" />
+        <input type="date" id="date" />
+        <button class="modal-btn" id="add-task">Добавить</button>
+      </form>
+    </div>
+
+    <div class="edit-modal">
+      <form class="edit-modal__inner">
+        <h1>Изменить задачу</h1>
+        <input placeholder="Заголовок задачи" type="text" id="edit-inp1" />
+        <input placeholder="Описание задачи" type="text" id="edit-inp2" />
+        <input type="date" id="edit-inp3" />
+        <button class="modal-btn" id="edit-task">Изменить</button>
+      </form>
+    </div>
+
+    <div id="details">
+      <div id="details__inner">
+        <h1 id="details-header">Подробная информация</h1>
+        <button class="modal-btn details-btn" id="close-details">закрыть</button>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
