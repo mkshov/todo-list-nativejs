@@ -7,12 +7,12 @@
 
 body {
   background-image: url(https://i.yapx.ru/GuYDB.gif);
-  /* background-size: cover; */
+  background-size: cover;
 
   /* ! 2 primer */
-  background-position: top center;
+  /* background-position: top center;
   background-repeat: no-repeat;
-  background-color: #030531;
+  background-color: #030531; */
 }
 
 .header {
